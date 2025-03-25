@@ -1,4 +1,5 @@
 
+using System.Text;
 using Telegram.Bot;
 using Telegram.Bot.Exceptions;
 using Telegram.Bot.Polling;
@@ -9,12 +10,9 @@ namespace SMbot;
 
 public class Bot
 {
-    private readonly ITelegramBotClient _botClient;
-    private readonly ReceiverOptions _receiverOptions;
-    private readonly SalesmateApiContoller _apiContoller;
-
     public Bot()
     {
+
         _botClient = new TelegramBotClient("7759148716:AAGJ4eGfEhTVudFJyFJ7gvCKL5FYqfe4ulw");
         _receiverOptions = new ReceiverOptions
         {
@@ -26,7 +24,9 @@ public class Bot
 
         _apiContoller = new();
     }
-
+    private readonly ITelegramBotClient _botClient;
+    private readonly ReceiverOptions _receiverOptions;
+    private readonly SalesmateApiContoller _apiContoller;
     public async Task Initialize(CancellationTokenSource cts)
     {
         _botClient.StartReceiving(UpdateHandler, ErrorHandler, _receiverOptions, cts.Token);
@@ -48,19 +48,19 @@ public class Bot
         
         var chatId = message.Chat.Id;
 
-        var salesmateResponse = await _apiContoller.AskSalesmate(message.Text);
+        var salesmateResponse = await _apiContoller.SearchSalesmate(message.Text);
         if (salesmateResponse.Data.Data.Count < 1)
         {
             throw new Exception("No response from Salesmate.");
         };
-        var text = "";
+        StringBuilder text = new ("");
         foreach (var name in salesmateResponse.Data.Data)
         {
-            text += $"{name.Name} {name.Id}\n";
+            text.Append($"{name.Name} {name.Id}\n");
         }
         await TelegramBotClientExtensions.SendTextMessageAsync(_botClient,
                 chatId,
-                text
+                text.ToString()
                 ?? throw new Exception("No response from Salesmate."));
 
         Console.WriteLine("Отправлен ответ ${user.FirstName}");
@@ -68,14 +68,7 @@ public class Bot
 
     private Task ErrorHandler(ITelegramBotClient botClient, Exception error, CancellationToken cancellationToken)
     {
-        var ErrorMessage = error switch
-        {
-            ApiRequestException apiRequestException
-                => $"Telegram API Error:\n[{apiRequestException.ErrorCode}]\n{apiRequestException.Message}",
-            _ => error.ToString()
-        };
-
-        Console.WriteLine(ErrorMessage);
+        Console.WriteLine(error.ToString());
         return Task.CompletedTask;
     }
 }

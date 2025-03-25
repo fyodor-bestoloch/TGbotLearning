@@ -2,7 +2,7 @@
 
 public static class Program
 {
-    static async Task Main()
+    public static async Task Main()
     {
         var bot = new Bot();
         

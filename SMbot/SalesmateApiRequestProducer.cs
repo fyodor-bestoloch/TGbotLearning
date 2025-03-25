@@ -1,5 +1,4 @@
 using System.Text;
-using System.Text.Json;
 
 namespace SMbot;
 
@@ -7,16 +6,12 @@ public class SalesmateApiRequestProducer
 {
     public enum SalesmateApiEndpoint
     {
-        GenerateResponse, //488de9d1-7996-11ef-bf9f-9b6c53603f75
-        Sample1,
-        Sample2
+        CompanySearch 
     }
     
     private readonly Dictionary<SalesmateApiEndpoint, string> SalesmateApiEndpointUrls = new()
     {
-        { SalesmateApiEndpoint.GenerateResponse, "https://adsterrapublishers.salesmate.io/apis/company/v4/search?rows=250&from=0" },
-        { SalesmateApiEndpoint.Sample1, "123" },
-        { SalesmateApiEndpoint.Sample2, "321" },
+        { SalesmateApiEndpoint.CompanySearch, "https://adsterrapublishers.salesmate.io/apis/company/v4/search?rows=250&from=0" }
     };
     
     private readonly Dictionary<string, string> SalesmateHeaders = new()
@@ -25,14 +20,14 @@ public class SalesmateApiRequestProducer
         { "x-linkname", "adsterrapublishers.salesmate.io" }
     };
     
-    public async Task<HttpRequestMessage> CreateRequestAskSalesmate(string userMessage)
+    public async Task<HttpRequestMessage> CreateRequestSearchSalesmate(string userMessage)
     {
         var request = new HttpRequestMessage(HttpMethod.Post,
-            requestUri: SalesmateApiEndpointUrls[SalesmateApiEndpoint.GenerateResponse]);
+            requestUri: SalesmateApiEndpointUrls[SalesmateApiEndpoint.CompanySearch]);
 
         await AddHeaders(request);
         
-        var jsonRequestContent = new StringContent($@"
+        var jsonRequestContent = new { request =  $@"
         {{
             ""displayingFields"": [
                 ""company.type"",
@@ -64,9 +59,12 @@ public class SalesmateApiRequestProducer
             ""moduleId"": 5,
             ""reportType"": ""get_data"",
             ""getRecordsCount"": true
-        }}", Encoding.UTF8, "application/json");
-        
-        request.Content = jsonRequestContent;
+        }}"};
+           
+        request.Content = new StringContent(
+            content: jsonRequestContent.request,
+            encoding: Encoding.UTF8, 
+            mediaType: "application/json");
         
         return request;
         

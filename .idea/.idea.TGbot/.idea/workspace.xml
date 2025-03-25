@@ -7,59 +7,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb91d2b5-58a7-4b3f-8674-1aa5d5084b8f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/SMbot/Model/SalesmateApiResponseModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/TGbot.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/TGbot.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/TGbot.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/TGbot.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/TGbot.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SMbot/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SMbot/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SMbot/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SMbot/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TGbot/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TGbot/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TGbot/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot.sln" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/Bot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/Bot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/GptApiContoller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/SalesmateApiContoller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/GptApiRequestProducer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/SalesmateApiRequestProducer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/Model/GtpApiResponseModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/TGbot.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/SMbot.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/bin/Debug/net9.0/Newtonsoft.Json.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/bin/Debug/net9.0/Newtonsoft.Json.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/bin/Debug/net9.0/System.Net.Http.Json.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/bin/Debug/net9.0/System.Net.Http.Json.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/bin/Debug/net9.0/TGbot.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/bin/Debug/net9.0/TGbot.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/bin/Debug/net9.0/TGbot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/TGbot.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/bin/Debug/net9.0/TGbot.exe" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/bin/Debug/net9.0/TGbot.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/bin/Debug/net9.0/TGbot.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/TGbot.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/bin/Debug/net9.0/TGbot.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/bin/Debug/net9.0/TGbot.runtimeconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/bin/Debug/net9.0/Telegram.Bot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/bin/Debug/net9.0/Telegram.Bot.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/obj/Debug/net9.0/TGbot.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/TGbot.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/obj/Debug/net9.0/TGbot.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/obj/Debug/net9.0/TGbot.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/TGbot.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/obj/Debug/net9.0/TGbot.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/TGbot.GlobalUsings.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/obj/Debug/net9.0/TGbot.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/obj/Debug/net9.0/TGbot.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/obj/Debug/net9.0/TGbot.csproj.CoreCompileInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/obj/Debug/net9.0/TGbot.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/TGbot.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/obj/Debug/net9.0/TGbot.csproj.Up2Date" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/TGbot.csproj.Up2Date" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/obj/Debug/net9.0/TGbot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/bin/Debug/net9.0/SMbot.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/obj/Debug/net9.0/TGbot.genruntimeconfig.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/obj/Debug/net9.0/TGbot.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/bin/Debug/net9.0/SMbot.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/obj/Debug/net9.0/ref/TGbot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/refint/TGbot.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/obj/Debug/net9.0/refint/TGbot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/ref/TGbot.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/obj/TGbot.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/obj/TGbot.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/obj/TGbot.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/obj/TGbot.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/obj/TGbot.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/obj/TGbot.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/obj/project.packagespec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/obj/rider.project.model.nuget.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TGbot/obj/rider.project.restore.info" beforeDir="false" />
+    <list default="true" id="cb91d2b5-58a7-4b3f-8674-1aa5d5084b8f" name="Changes" comment="qwe">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TGbot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TGbot/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SMbot/Bot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/Bot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SMbot/Model/SalesmateApiResponseModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/Model/SalesmateApiResponseModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SMbot/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SMbot/SalesmateApiContoller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/SalesmateApiContoller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SMbot/SalesmateApiRequestProducer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/SalesmateApiRequestProducer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SMbot/bin/Debug/net9.0/SMbot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/bin/Debug/net9.0/SMbot.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SMbot/bin/Debug/net9.0/SMbot.exe" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/bin/Debug/net9.0/SMbot.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SMbot/bin/Debug/net9.0/SMbot.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/bin/Debug/net9.0/SMbot.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/SMbot.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/SMbot.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/SMbot.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/SMbot.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/SMbot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/SMbot.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/SMbot.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/SMbot.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/SMbot.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/SMbot.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/ref/SMbot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/ref/SMbot.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/refint/SMbot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SMbot/obj/Debug/net9.0/refint/SMbot.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,8 +101,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1742833891630</updated>
-      <workItem from="1742833892419" duration="7145000" />
+      <workItem from="1742833892419" duration="9918000" />
     </task>
+    <task id="LOCAL-00001" summary="smbot">
+      <option name="closed" value="true" />
+      <created>1742841312276</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742841312276</updated>
+    </task>
+    <task id="LOCAL-00002" summary="qwe">
+      <option name="closed" value="true" />
+      <created>1742841330714</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742841330714</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,5 +129,8 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="smbot" />
+    <MESSAGE value="qwe" />
+    <option name="LAST_COMMIT_MESSAGE" value="qwe" />
   </component>
 </project>

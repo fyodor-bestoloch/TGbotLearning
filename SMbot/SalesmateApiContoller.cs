@@ -1,5 +1,4 @@
 using System.Net.Http.Json;
-using Microsoft.Extensions.DependencyInjection;
 using SMbot.Model;
 
 namespace SMbot;
@@ -13,11 +12,11 @@ public class SalesmateApiContoller
     
     private readonly SalesmateApiRequestProducer _requestProducer;
 
-    public async Task<SalesmateApiResponseModel> AskSalesmate(string userMessage)
+    public async Task<SalesmateApiResponseModel> SearchSalesmate(string userMessage)
     {
         using var httpClient = new HttpClient();
 
-        var request = await _requestProducer.CreateRequestAskSalesmate(userMessage);
+        var request = await _requestProducer.CreateRequestSearchSalesmate(userMessage);
         
         var response = await httpClient.SendAsync(request);
         if (!response.IsSuccessStatusCode)
