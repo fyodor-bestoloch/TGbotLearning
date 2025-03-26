@@ -1,17 +1,11 @@
-﻿using SMbot;
+﻿using Microsoft.Extensions.Hosting;
+using SMbot;
 
 public static class Program
 {
-    public static async Task Main()
+    public static void Main()
     {
-        var bot = new Bot();
-        
-        using var cts = new CancellationTokenSource();
-        await bot.Initialize(cts);
-
-        while (!cts.IsCancellationRequested)
-        {
-            await Task.Delay(TimeSpan.FromSeconds(1));
-        }
+        var app = AppConfigurator.Configure();
+        app.Run();
     }
 }

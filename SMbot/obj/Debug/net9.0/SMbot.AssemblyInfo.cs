@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SMbot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a4cd7b657a9cb5b4bc9cac8023b5bd92073b74f1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b60fd6f1213c110d73ec70bb0e0d28665027b2a5")]
 [assembly: System.Reflection.AssemblyProductAttribute("SMbot")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SMbot")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

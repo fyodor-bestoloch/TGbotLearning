@@ -1,0 +1,12 @@
+D:\AtFy\Dev\Projects\CSharp\TGbotLearning\SalesmateApiLib\bin\Debug\net9.0\SalesmateApiLib.deps.json
+D:\AtFy\Dev\Projects\CSharp\TGbotLearning\SalesmateApiLib\bin\Debug\net9.0\SalesmateApiLib.dll
+D:\AtFy\Dev\Projects\CSharp\TGbotLearning\SalesmateApiLib\bin\Debug\net9.0\SalesmateApiLib.pdb
+D:\AtFy\Dev\Projects\CSharp\TGbotLearning\SalesmateApiLib\obj\Debug\net9.0\SalesmateApiLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\AtFy\Dev\Projects\CSharp\TGbotLearning\SalesmateApiLib\obj\Debug\net9.0\SalesmateApiLib.AssemblyInfoInputs.cache
+D:\AtFy\Dev\Projects\CSharp\TGbotLearning\SalesmateApiLib\obj\Debug\net9.0\SalesmateApiLib.AssemblyInfo.cs
+D:\AtFy\Dev\Projects\CSharp\TGbotLearning\SalesmateApiLib\obj\Debug\net9.0\SalesmateApiLib.csproj.CoreCompileInputs.cache
+D:\AtFy\Dev\Projects\CSharp\TGbotLearning\SalesmateApiLib\obj\Debug\net9.0\SalesmateApiLib.sourcelink.json
+D:\AtFy\Dev\Projects\CSharp\TGbotLearning\SalesmateApiLib\obj\Debug\net9.0\SalesmateApiLib.dll
+D:\AtFy\Dev\Projects\CSharp\TGbotLearning\SalesmateApiLib\obj\Debug\net9.0\refint\SalesmateApiLib.dll
+D:\AtFy\Dev\Projects\CSharp\TGbotLearning\SalesmateApiLib\obj\Debug\net9.0\SalesmateApiLib.pdb
+D:\AtFy\Dev\Projects\CSharp\TGbotLearning\SalesmateApiLib\obj\Debug\net9.0\ref\SalesmateApiLib.dll

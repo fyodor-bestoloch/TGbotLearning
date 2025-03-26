@@ -1,0 +1,16 @@
+D:\AtFy\Dev\Projects\CSharp\TGbotLearning\BotLib\bin\Debug\net9.0\BotLib.deps.json
+D:\AtFy\Dev\Projects\CSharp\TGbotLearning\BotLib\bin\Debug\net9.0\BotLib.dll
+D:\AtFy\Dev\Projects\CSharp\TGbotLearning\BotLib\bin\Debug\net9.0\BotLib.pdb
+D:\AtFy\Dev\Projects\CSharp\TGbotLearning\BotLib\bin\Debug\net9.0\SalesmateApiLib.dll
+D:\AtFy\Dev\Projects\CSharp\TGbotLearning\BotLib\bin\Debug\net9.0\SalesmateApiLib.pdb
+D:\AtFy\Dev\Projects\CSharp\TGbotLearning\BotLib\obj\Debug\net9.0\BotLib.csproj.AssemblyReference.cache
+D:\AtFy\Dev\Projects\CSharp\TGbotLearning\BotLib\obj\Debug\net9.0\BotLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\AtFy\Dev\Projects\CSharp\TGbotLearning\BotLib\obj\Debug\net9.0\BotLib.AssemblyInfoInputs.cache
+D:\AtFy\Dev\Projects\CSharp\TGbotLearning\BotLib\obj\Debug\net9.0\BotLib.AssemblyInfo.cs
+D:\AtFy\Dev\Projects\CSharp\TGbotLearning\BotLib\obj\Debug\net9.0\BotLib.csproj.CoreCompileInputs.cache
+D:\AtFy\Dev\Projects\CSharp\TGbotLearning\BotLib\obj\Debug\net9.0\BotLib.sourcelink.json
+D:\AtFy\Dev\Projects\CSharp\TGbotLearning\BotLib\obj\Debug\net9.0\BotLib.csproj.Up2Date
+D:\AtFy\Dev\Projects\CSharp\TGbotLearning\BotLib\obj\Debug\net9.0\BotLib.dll
+D:\AtFy\Dev\Projects\CSharp\TGbotLearning\BotLib\obj\Debug\net9.0\refint\BotLib.dll
+D:\AtFy\Dev\Projects\CSharp\TGbotLearning\BotLib\obj\Debug\net9.0\BotLib.pdb
+D:\AtFy\Dev\Projects\CSharp\TGbotLearning\BotLib\obj\Debug\net9.0\ref\BotLib.dll

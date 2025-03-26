@@ -1,16 +1,17 @@
 using System.Net.Http.Json;
+using SMbot.Interfaces;
 using SMbot.Model;
 
 namespace SMbot;
 
-public class SalesmateApiContoller
+public class SalesmateApiContoller : ISalesmateApiContoller
 {
-    public SalesmateApiContoller()
+    public SalesmateApiContoller(ISalesmateApiRequestProducer requestProducer)
     {
-        _requestProducer = new();
+        _requestProducer = requestProducer;
     }
     
-    private readonly SalesmateApiRequestProducer _requestProducer;
+    private readonly ISalesmateApiRequestProducer _requestProducer;
 
     public async Task<SalesmateApiResponseModel> SearchSalesmate(string userMessage)
     {
@@ -24,9 +25,7 @@ public class SalesmateApiContoller
             Console.WriteLine(response.ToString());
             throw new Exception("Couldn't get valid response from Salesmate Api.");
         }
-        //string responseString = await response.Content.ReadAsStringAsync();
-        //Console.WriteLine("response");
-        //Console.WriteLine(responseString);
+
         var deserializedResponse = await response.Content.ReadFromJsonAsync<SalesmateApiResponseModel>();
         if (deserializedResponse is null)
         {

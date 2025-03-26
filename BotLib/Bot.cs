@@ -1,5 +1,7 @@
 
 using System.Text;
+using Microsoft.Extensions.Hosting;
+using SMbot.Interfaces;
 using Telegram.Bot;
 using Telegram.Bot.Exceptions;
 using Telegram.Bot.Polling;
@@ -8,34 +10,37 @@ using Telegram.Bot.Types.Enums;
 
 namespace SMbot;
 
-public class Bot
+public class Bot : BackgroundService
 {
-    public Bot()
+    public Bot(IBotLogicWorker worker,
+        TelegramBotClient botClient,
+        ReceiverOptions receiverOptions)
     {
-
-        _botClient = new TelegramBotClient("7759148716:AAGJ4eGfEhTVudFJyFJ7gvCKL5FYqfe4ulw");
-        _receiverOptions = new ReceiverOptions
-        {
-            AllowedUpdates = new[]
-            {
-                UpdateType.Message
-            }
-        };
-
-        _apiContoller = new();
+        _botClient = botClient;
+        _receiverOptions = receiverOptions;
+        _worker = worker;
     }
     private readonly ITelegramBotClient _botClient;
     private readonly ReceiverOptions _receiverOptions;
-    private readonly SalesmateApiContoller _apiContoller;
-    public async Task Initialize(CancellationTokenSource cts)
+    private readonly IBotLogicWorker _worker;
+    
+    protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        _botClient.StartReceiving(UpdateHandler, ErrorHandler, _receiverOptions, cts.Token);
+        _botClient.StartReceiving(UpdateHandler, ErrorHandler, _receiverOptions, stoppingToken);
 
         var me = await _botClient.GetMe();
         Console.WriteLine($"{me.FirstName} запущен!");
+
+        while (!stoppingToken.IsCancellationRequested)
+        {
+            await Task.Delay(TimeSpan.FromSeconds(1));
+        }
     }
 
-    private async Task UpdateHandler(ITelegramBotClient botClient, Update update, CancellationToken cancellationToken)
+    private async Task UpdateHandler(
+        ITelegramBotClient botClient,
+        Update update,
+        CancellationToken cancellationToken)
     {
         Console.WriteLine("Пришло сообщение!");
 
@@ -47,20 +52,11 @@ public class Bot
         }
         
         var chatId = message.Chat.Id;
-
-        var salesmateResponse = await _apiContoller.SearchSalesmate(message.Text);
-        if (salesmateResponse.Data.Data.Count < 1)
-        {
-            throw new Exception("No response from Salesmate.");
-        };
-        StringBuilder text = new ("");
-        foreach (var name in salesmateResponse.Data.Data)
-        {
-            text.Append($"{name.Name} {name.Id}\n");
-        }
+        var botResponse = await _worker.ProcessUserSearchRequestMessage(message);
+        
         await TelegramBotClientExtensions.SendTextMessageAsync(_botClient,
                 chatId,
-                text.ToString()
+                botResponse
                 ?? throw new Exception("No response from Salesmate."));
 
         Console.WriteLine("Отправлен ответ ${user.FirstName}");
@@ -71,4 +67,6 @@ public class Bot
         Console.WriteLine(error.ToString());
         return Task.CompletedTask;
     }
+
+    
 }

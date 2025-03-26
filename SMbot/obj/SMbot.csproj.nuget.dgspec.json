@@ -1,20 +1,93 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\RiderProjects\\SalesmateBot1\\SMbot\\SMbot.csproj": {}
+    "D:\\AtFy\\Dev\\Projects\\CSharp\\TGbotLearning\\SMbot\\SMbot.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\RiderProjects\\SalesmateBot1\\SMbot\\SMbot.csproj": {
+    "D:\\AtFy\\Dev\\Projects\\CSharp\\TGbotLearning\\BotLib\\BotLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\RiderProjects\\SalesmateBot1\\SMbot\\SMbot.csproj",
-        "projectName": "SMbot",
-        "projectPath": "C:\\Users\\User\\RiderProjects\\SalesmateBot1\\SMbot\\SMbot.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\RiderProjects\\SalesmateBot1\\SMbot\\obj\\",
+        "projectUniqueName": "D:\\AtFy\\Dev\\Projects\\CSharp\\TGbotLearning\\BotLib\\BotLib.csproj",
+        "projectName": "BotLib",
+        "projectPath": "D:\\AtFy\\Dev\\Projects\\CSharp\\TGbotLearning\\BotLib\\BotLib.csproj",
+        "packagesPath": "C:\\Users\\Archie\\.nuget\\packages\\",
+        "outputPath": "D:\\AtFy\\Dev\\Projects\\CSharp\\TGbotLearning\\BotLib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Archie\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\AtFy\\Dev\\Projects\\CSharp\\TGbotLearning\\SalesmateApiLib\\SalesmateApiLib.csproj": {
+                "projectPath": "D:\\AtFy\\Dev\\Projects\\CSharp\\TGbotLearning\\SalesmateApiLib\\SalesmateApiLib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Telegram.Bot": {
+              "target": "Package",
+              "version": "[22.4.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\Archie\\.dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\AtFy\\Dev\\Projects\\CSharp\\TGbotLearning\\SalesmateApiLib\\SalesmateApiLib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\AtFy\\Dev\\Projects\\CSharp\\TGbotLearning\\SalesmateApiLib\\SalesmateApiLib.csproj",
+        "projectName": "SalesmateApiLib",
+        "projectPath": "D:\\AtFy\\Dev\\Projects\\CSharp\\TGbotLearning\\SalesmateApiLib\\SalesmateApiLib.csproj",
+        "packagesPath": "C:\\Users\\Archie\\.nuget\\packages\\",
+        "outputPath": "D:\\AtFy\\Dev\\Projects\\CSharp\\TGbotLearning\\SalesmateApiLib\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Archie\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -43,7 +116,89 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\Archie\\.dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\AtFy\\Dev\\Projects\\CSharp\\TGbotLearning\\SMbot\\SMbot.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\AtFy\\Dev\\Projects\\CSharp\\TGbotLearning\\SMbot\\SMbot.csproj",
+        "projectName": "SMbot",
+        "projectPath": "D:\\AtFy\\Dev\\Projects\\CSharp\\TGbotLearning\\SMbot\\SMbot.csproj",
+        "packagesPath": "C:\\Users\\Archie\\.nuget\\packages\\",
+        "outputPath": "D:\\AtFy\\Dev\\Projects\\CSharp\\TGbotLearning\\SMbot\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Archie\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\AtFy\\Dev\\Projects\\CSharp\\TGbotLearning\\BotLib\\BotLib.csproj": {
+                "projectPath": "D:\\AtFy\\Dev\\Projects\\CSharp\\TGbotLearning\\BotLib\\BotLib.csproj"
+              },
+              "D:\\AtFy\\Dev\\Projects\\CSharp\\TGbotLearning\\SalesmateApiLib\\SalesmateApiLib.csproj": {
+                "projectPath": "D:\\AtFy\\Dev\\Projects\\CSharp\\TGbotLearning\\SalesmateApiLib\\SalesmateApiLib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.Extensions.Http.Polly": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -73,7 +228,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\User\\.dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\Archie\\.dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
